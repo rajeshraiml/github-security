@@ -15,3 +15,12 @@ jobs:
           else
           echo "Issue is not about a bug"
           fi
+      # - name: Fix Script injection 
+      #   env: 
+      #     TITLE: ${{ github.event.issue.title }}
+      #   run: |
+      #     if [[ "$TITLE" == *"bug"* ]]; then
+      #     echo "Issue is about a bug!"
+      #     else
+      #     echo "Issue is not about a bug"
+      #     fi
