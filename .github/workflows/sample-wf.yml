@@ -7,6 +7,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Get code
-        uses: action/checkout@v3
+        uses: actions/checkout@v3
       - name: Branch Name
         run: "echo branch name : ${{github.event}}"
