@@ -1,0 +1,12 @@
+name: Sample
+run-name: ${{github.actor}} - ${{github.action_path}}
+on:
+    workflow_dispatch: 
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get code
+        uses: action/checkout@v3
+      - name: Branch Name
+        run: "echo branch name : ${{github.event}}"
